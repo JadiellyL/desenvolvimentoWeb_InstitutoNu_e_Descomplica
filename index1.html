@@ -5,24 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style3.css">
+    <!--link rel="stylesheet" href="css/style3.css"-->
     <title>Viagem dos Sonhos
     </title>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Taxas</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+    <header class="container-fluid p-2 bg-warning text-center">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Viagem dos Sonhos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Taxas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contato
+                    </a>
+                    <ul class="dropdown-menu bg-warning">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
         <h1>Venha realizar a viagem dos seus sonhos.</h1>
     </header>
 
-    <section id="pacotes">
+    <section class="container-fluid bg-ligth text-center" id="pacotes">
         <h2>Conheça nossos pacotes</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -32,17 +54,17 @@
             <a href="www.google.com">Link</a>
         </p>
 
-        <div class="figuras">
-            <figure>
-                <img src="img/fortaleza.jpg" alt="cidade de fortaleza-ce">
+        <div class="row" id="figuras">
+            <figure class="col text-center">
+                <img src="img/fortaleza.jpg" alt="cidade de fortaleza-ce" width="400px" height="300px">
                 <figcaption>Fortaleza-Ce</figcaption>
             </figure>
-            <figure>
-                <img src="img/piaui.jpg" alt="Estado do Piaui">
+            <figure class="col text-center">
+                <img src="img/piaui.jpg" alt="Estado do Piaui" width="400px" height="300px">
                 <figcaption>Sete Cidades Piaui</figcaption>
             </figure>
-            <figure>
-                <img src="img/pernambuco.jpg" alt="Estado do Pernambuco">
+            <figure class="col text-center">
+                <img src="img/pernambuco.jpg" alt="Estado do Pernambuco" width="400px" height="300px">
                 <figcaption>Pernambuco</figcaption>
             </figure>
         </div>
@@ -57,7 +79,7 @@
     </section>
     <br><br>
 
-    <section>
+    <section class="container-fluid bg-warning">
         <h2>Taxas e Serviços</h2>
         <p>Veja nossas taxas para serviços.</p>
         <table>
@@ -85,7 +107,7 @@
         </table>
     </section>
 
-    <section>
+    <section class="container-fluid bg-ligth">
         <h2>Contato</h2>
         <form method="GET" action="">
             <fieldset>
@@ -149,7 +171,7 @@
         </form>
     </section>
         
-    <footer>
+    <footer class="container-fluid bg-warning">
         <p>Desenvolvido por Jadielly Lima</p>
     </footer>
         
